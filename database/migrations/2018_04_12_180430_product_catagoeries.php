@@ -15,7 +15,7 @@ class ProductCatagoeries extends Migration
     {
         Schema::create('product_catagory', function (Blueprint $table) {
             $table->integer('product_id');
-            $table->integer('catagorie_id');
+            $table->integer('catagory_id');
         });
     }
 

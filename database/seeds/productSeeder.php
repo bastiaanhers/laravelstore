@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class productSeeder extends Seeder
+class ProductSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,12 +13,46 @@ class productSeeder extends Seeder
     {
       DB::table('products')->insert(
         [
-            [  'name' => 'Scuurspons',
-                'description' => 'prachtige schuurspons voor de vaatwas',
-                'price' => '9,98',
-                'cover_image' => '', 
-            ]
-                
+            [  'name' => 'Scuurspons rood',
+                'description' => 'prachtige schuurspons voor de vaat',
+                'price' => '9.98'
+            ],
+            [  'name' => 'Scuurspons groen',
+            'description' => 'prachtige schuurspons voor de vaat',
+            'price' => '9.98'
+            ],
+            [  'name' => 'Scuurspons blauw',
+            'description' => 'prachtige schuurspons voor de vaat',
+            'price' => '9.98'
+            ],
+            [  'name' => 'Scuurspons orange',
+            'description' => 'prachtige schuurspons voor de vaat',
+            'price' => '9.98'
+            ],
+            [  'name' => 'Scuurspons paars',
+            'description' => 'prachtige schuurspons voor de vaat',
+            'price' => '9.98',
+            ],
+            [  'name' => 'Zachte spons rood',
+            'description' => 'prachtige spons die net wat zachter is dan de gemiddelde spons. Voor dure vaat ',
+            'price' => '19.98',
+            ],
+            [  'name' => 'Zachte spons groen',
+            'description' => 'prachtige spons die net wat zachter is dan de gemiddelde spons. Voor dure vaat ',
+            'price' => '19.98',
+            ],
+            [  'name' => 'Zachte spons blauw',
+            'description' => 'prachtige spons die net wat zachter is dan de gemiddelde spons. Voor dure vaat ',
+            'price' => '19.98',
+            ],
+            [  'name' => 'Zachte spons orange',
+            'description' => 'prachtige spons die net wat zachter is dan de gemiddelde spons. Voor dure vaat ',
+            'price' => '19.98',
+            ],
+            [  'name' => 'Zachte spons paars',
+            'description' => 'prachtige spons die net wat zachter is dan de gemiddelde spons. Voor dure vaat ',
+            'price' => '19.98',
+            ],
         ]);  
     }
 }
