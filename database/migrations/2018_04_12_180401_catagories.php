@@ -13,7 +13,10 @@ class Catagories extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('catagories', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+        });
     }
 
     /**
@@ -23,6 +26,6 @@ class Catagories extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('catagories');        
     }
 }

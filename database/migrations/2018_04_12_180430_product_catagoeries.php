@@ -13,7 +13,10 @@ class ProductCatagoeries extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('product_catagory', function (Blueprint $table) {
+            $table->integer('product_id');
+            $table->integer('catagorie_id');
+        });
     }
 
     /**
@@ -23,6 +26,6 @@ class ProductCatagoeries extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('product_catagory'); 
     }
 }

@@ -13,7 +13,11 @@ class Orderlines extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('orderlines', function (Blueprint $table) {
+            $table->integer('order_id');
+            $table->integer('product_id');
+            $table->integer('amount');  
+        });
     }
 
     /**
@@ -23,6 +27,7 @@ class Orderlines extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('orderlines');
+        
     }
 }
