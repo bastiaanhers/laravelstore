@@ -26,3 +26,6 @@ Route::get('/admin', 'AdminController@admin')
 Route::get('/product', 'ProductsController@index')     
     ->name('product info');
 
+Route::get('/catagory/{id}', 'CatagoryController@index')
+    
+    ->name('catagory');

@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="row">
+
+        <div class="col-md-2">
+
+          <h1 class="my-4">Catagories
+          </h1>
+          <div class="list-group">
+            @foreach ($catagories as $catagory)
+          <a href="/catagory/{{$catagory->id}}" class="list-group-item">{{$catagory->name}}</a>
+            @endforeach
+          </div>
+
+        </div>
 <div class="container">
     <div class="row">    
         @foreach ($products as $product)

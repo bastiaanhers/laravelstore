@@ -29,6 +29,7 @@ class HomeController extends Controller
     public function index()
     {
         $products = DB::table('products')->get();
-        return view('home', ['products'=>$products]);
+        $catagories = DB::table('catagories')->get();
+        return view('home', ['products'=>$products, 'catagories'=>$catagories]);
     }
 }

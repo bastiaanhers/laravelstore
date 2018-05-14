@@ -13,23 +13,23 @@ class ProductSeeder extends Seeder
     {
       DB::table('products')->insert(
         [
-            [  'name' => 'Scuurspons rood',
+            [  'name' => 'schuurspons rood',
                 'description' => 'prachtige schuurspons voor de vaat',
                 'price' => '9.98'
             ],
-            [  'name' => 'Scuurspons groen',
+            [  'name' => 'Schuurspons groen',
             'description' => 'prachtige schuurspons voor de vaat',
             'price' => '9.98'
             ],
-            [  'name' => 'Scuurspons blauw',
+            [  'name' => 'Schuurspons blauw',
             'description' => 'prachtige schuurspons voor de vaat',
             'price' => '9.98'
             ],
-            [  'name' => 'Scuurspons orange',
+            [  'name' => 'Schuurspons orange',
             'description' => 'prachtige schuurspons voor de vaat',
             'price' => '9.98'
             ],
-            [  'name' => 'Scuurspons paars',
+            [  'name' => 'Schuurspons paars',
             'description' => 'prachtige schuurspons voor de vaat',
             'price' => '9.98',
             ],
